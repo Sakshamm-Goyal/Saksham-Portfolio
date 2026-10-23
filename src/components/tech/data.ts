@@ -71,6 +71,7 @@ export const EXPERIENCE: Commit[] = [
       "Delivered the MVP in 5 weeks; onboarded 35,000+ users in 2 days",
     ],
     image: withBasePath("/projects_assets/elara.png"),
+    url: "https://joinelara.com",
     isCurrent: true,
   },
   {
@@ -105,7 +106,7 @@ export const EXPERIENCE: Commit[] = [
       "Set up GitHub Actions and supported repeatable AWS deployments",
     ],
     image: withBasePath("/projects_assets/asssr.png"),
-    url: "https://www.niti.gov.in",
+    url: "https://www.asssr.org/",
   },
   {
     hash: "12d2f24",

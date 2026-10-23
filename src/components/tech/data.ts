@@ -1,5 +1,7 @@
 // /tech - "The Commit Timeline" content
 
+import { withBasePath } from "@/lib/seo";
+
 export const TECH_ACCENT = {
   hex: "#60a5fa",
   dim: "rgba(96, 165, 250, 0.35)",
@@ -34,7 +36,7 @@ export const ABOUT = {
     { key: "focus", value: "AI Systems" },
     { key: "public code", value: "96 repos" },
   ],
-  portrait: "/myimages/saksham-system-portrait.png",
+  portrait: withBasePath("/myimages/saksham-system-portrait.png"),
   node: { hash: "a17e1a9", message: "feat: own the full path" },
 } as const;
 
@@ -68,7 +70,7 @@ export const EXPERIENCE: Commit[] = [
       "Built brand-specific extractors when generic scraping tools missed requirements",
       "Delivered the MVP in 5 weeks; onboarded 35,000+ users in 2 days",
     ],
-    image: "/projects_assets/elara.png",
+    image: withBasePath("/projects_assets/elara.png"),
     isCurrent: true,
   },
   {
@@ -85,7 +87,7 @@ export const EXPERIENCE: Commit[] = [
       "Architected and maintained production MERN services on AWS",
       "Built repeatable Docker and Kubernetes-style release pipelines",
     ],
-    image: "/projects_assets/hireanything.png",
+    image: withBasePath("/projects_assets/hireanything.png"),
     url: "https://hireanything.com",
   },
   {
@@ -102,7 +104,7 @@ export const EXPERIENCE: Commit[] = [
       "Implemented Node.js REST and SSR services to improve initial response time",
       "Set up GitHub Actions and supported repeatable AWS deployments",
     ],
-    image: "/projects_assets/asssr.png",
+    image: withBasePath("/projects_assets/asssr.png"),
     url: "https://www.niti.gov.in",
   },
   {
@@ -119,7 +121,7 @@ export const EXPERIENCE: Commit[] = [
       "Modernised responsive UI components, increasing engagement by 20%",
       "Optimised production C#, WPF, and Java code by 15%",
     ],
-    image: "/projects_assets/i2v.png",
+    image: withBasePath("/projects_assets/i2v.png"),
     url: "https://www.i2vsys.com",
   },
 ];
@@ -143,7 +145,7 @@ export const PROJECTS: Project[] = [
     description:
       "An evidence-first workbench for investigating cloud and AI waste, trialling bounded changes, approving an exact plan, executing once, and verifying or safely recovering the result.",
     proof: "117 local checks pass · approval-bound execution · fail-closed sponsor gates",
-    image: "/projects_assets/superops-system-cover.png",
+    image: withBasePath("/projects_assets/superops-system-cover.png"),
     githubUrl: "https://github.com/Sakshamm-Goyal/SuperOps",
   },
   {
@@ -153,7 +155,7 @@ export const PROJECTS: Project[] = [
     description:
       "Turns native, scanned, or mixed PDF PRDs into source-linked requirements, dependency-checked plans, and copy-ready prompts—with a human review gate before planning.",
     proof: "PDF provenance · deterministic validation · browser-tested review flow",
-    image: "/projects_assets/ai-engineering-planner.png",
+    image: withBasePath("/projects_assets/ai-engineering-planner.png"),
     githubUrl: "https://github.com/Sakshamm-Goyal/AI-Engineering-Planner",
   },
   {
@@ -163,7 +165,7 @@ export const PROJECTS: Project[] = [
     description:
       "A guarded natural-language interface over SAP order-to-cash data, pairing generated SQL with a navigable graph and result-linked entity highlighting.",
     proof: "713 nodes · 825 edges · 19 source tables · 20 API tests",
-    image: "/projects_assets/sap-o2c-explorer.png",
+    image: withBasePath("/projects_assets/sap-o2c-explorer.png"),
     githubUrl: "https://github.com/Sakshamm-Goyal/Dodge-AI-FDE",
   },
   {
@@ -173,7 +175,7 @@ export const PROJECTS: Project[] = [
     description:
       "Privacy-first clipboard sync across Android and macOS with end-to-end encryption, QR pairing, offline delivery, and a zero-knowledge WebSocket relay.",
     proof: "Android ↔ macOS · XChaCha20-Poly1305 · Go WebSocket relay",
-    image: "/projects_assets/clipshare.png",
+    image: withBasePath("/projects_assets/clipshare.png"),
     githubUrl: "https://github.com/Sakshamm-Goyal/Clipshare",
   },
   {
@@ -183,7 +185,7 @@ export const PROJECTS: Project[] = [
     description:
       "Automated repository reviews with GitHub OAuth and AI-assisted analysis. Built to sync 100+ repositories while keeping typical API responses under 300ms.",
     proof: "100+ repositories · typical responses under 300ms",
-    image: "/projects_assets/ai-code-analyzer.png",
+    image: withBasePath("/projects_assets/ai-code-analyzer.png"),
     liveUrl: "https://ai-code-analyzer-lyart.vercel.app",
     githubUrl: "https://github.com/Sakshamm-Goyal/AI-Code-Analyzer",
   },
@@ -194,7 +196,7 @@ export const PROJECTS: Project[] = [
     description:
       "A visual canvas for composing AI workflows across models, prompts, media processing, and background tasks into expressive, executable pipelines.",
     proof: "Visual DAG authoring · background execution · reusable nodes",
-    image: "/projects_assets/llm-workflow-builder.png",
+    image: withBasePath("/projects_assets/llm-workflow-builder.png"),
     liveUrl: "https://llm-workflow-builder.onrender.com",
     githubUrl: "https://github.com/Sakshamm-Goyal/llm-workflow-builder",
   },
@@ -205,7 +207,7 @@ export const PROJECTS: Project[] = [
     description:
       "Real-time collaborative editing with conflict-minimising sync, MongoDB change streams, and WebSocket flows designed for 50+ concurrent users at sub-100ms latency.",
     proof: "50+ concurrent users · sub-100ms collaboration latency",
-    image: "/projects_assets/collab-note.png",
+    image: withBasePath("/projects_assets/collab-note.png"),
     liveUrl: "https://collab-note-three.vercel.app",
     githubUrl: "https://github.com/Sakshamm-Goyal/Collab-Note",
   },
@@ -247,5 +249,5 @@ export const CONTACT = {
     { name: "GitHub", href: "https://github.com/Sakshamm-Goyal" },
     { name: "LinkedIn", href: "https://linkedin.com/in/sakshammgoyal" },
   ],
-  resume: "/Saksham-Goyal-Resume.pdf",
+  resume: withBasePath("/Saksham-Goyal-Resume.pdf"),
 } as const;

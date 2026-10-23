@@ -198,7 +198,7 @@ export default function Oneko() {
       style={{
         width: "32px",
         height: "32px",
-        backgroundImage: "url(/oneko.gif)",
+        backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ""}/oneko.gif)`,
         imageRendering: "pixelated",
         left: "16px",
         top: "16px",

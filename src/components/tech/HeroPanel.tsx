@@ -2,6 +2,7 @@
 
 import { Panel, useHorizontal } from "@/components/horizontal";
 import { Reveal, Sticker, GhostText, U, TapedPhoto, CommitLine } from "@/components/zine";
+import { withBasePath } from "@/lib/seo";
 import { HERO, ABOUT } from "./data";
 
 const CONTACT_INDEX = 5;
@@ -52,7 +53,7 @@ export default function HeroPanel({ index }: { index: number }) {
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </button>
               <a
-                href="/Saksham-Goyal-Resume.pdf"
+                href={withBasePath("/Saksham-Goyal-Resume.pdf")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border-2 border-ink px-7 py-4 font-grotesk text-sm font-bold uppercase tracking-[0.14em] text-ink transition-colors hover:bg-ink hover:text-cream"

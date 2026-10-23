@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: /Saksham-Portfolio
+      NEXT_PUBLIC_SITE_URL: https://sakshamm-goyal.github.io/Saksham-Portfolio
     steps:
       - name: Checkout
         uses: actions/checkout@v4

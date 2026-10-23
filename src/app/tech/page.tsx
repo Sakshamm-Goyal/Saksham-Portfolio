@@ -26,6 +26,7 @@ import {
   SITE_NAME,
   SITE_URL,
   TWITTER_CREATOR,
+  withBasePath,
 } from "@/lib/seo";
 
 const title = "AI Systems & Full-Stack Engineer";
@@ -73,7 +74,7 @@ export const metadata: Metadata = {
     title: "Saksham Goyal - AI Systems & Full-Stack Engineer",
     description,
     creator: TWITTER_CREATOR,
-    images: ["/og-image.png"],
+    images: [withBasePath("/og-image.png")],
   },
 };
 

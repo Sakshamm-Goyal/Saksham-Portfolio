@@ -8,6 +8,7 @@ import {
   PERSON_ID,
   SITE_NAME,
   SITE_URL,
+  withBasePath,
 } from "@/lib/seo";
 import "./globals.css";
 
@@ -65,13 +66,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Saksham Goyal | AI Systems & Full-Stack Engineer",
     description,
-    images: ["/og-image.png"],
+    images: [withBasePath("/og-image.png")],
   },
   robots: INDEXABLE_ROBOTS,
   verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
     ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
     : undefined,
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: withBasePath("/favicon.ico") },
 };
 
 const structuredData = {
